@@ -1,0 +1,123 @@
+body {
+
+  margin:0px;
+  background-color: black;
+}
+
+.myimage{
+  width:200px;
+  height:100px;
+}
+
+.all {
+  display: flex;
+}
+
+.all a {
+  color: white;
+}
+
+.mylinks{
+
+  display:flex;
+margin-top: 10px;
+
+}
+.mylinks a{
+
+text-decoration: none;
+margin:20px
+
+}
+
+#urlimage {
+  height: 200px;
+  width: 100px;
+  border: 2px solid white;
+  margin: 5px;
+  border-radius: 10px;
+  animation: slide-left 10s infinite;
+}
+
+#top {
+  color: white;
+  margin: 10px;
+  
+}
+
+.allimages {
+  display: flex;
+
+
+}
+.allimages:hover {
+  overflow-x:scroll
+}
+
+#urlimage:hover{
+  transform: scale(1.2);
+  transition: transform 1s;
+}
+/* 
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+} */
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
